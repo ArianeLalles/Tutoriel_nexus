@@ -3,7 +3,7 @@
 Ce guide décrit l'utilisation du logiciel Nexus, de l'acquisition des données jusqu'au pré-traitement.
 
 > **Rédigé le :** 20/11/2026 (Ariane Lallès)  
-> **Dernière mise à jour :** 23/11/2026 (Ariane Lallès)
+> **Dernière mise à jour :** 27/11/2026 (Ariane Lallès)
 
 ## Contenu 
 
