@@ -1,0 +1,27 @@
+site_name: Tutoriel Nexus
+
+theme:
+  name: material
+  logo: ibhgc.png
+  palette:
+    primary: blue grey
+
+use_directory_urls: false
+
+plugins:
+  - search
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: fr
+          default: true
+          name: Français
+        - locale: en
+          name: English
+
+nav:
+  - index.md
+  - nouveau_VST.md
+  - traitement_marches.md
+  - utiliser_VST.md
+  - raccourcis_clavier.md
