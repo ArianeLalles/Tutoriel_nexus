@@ -10,6 +10,14 @@ use_directory_urls: false
 
 plugins:
   - search
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: fr
+          default: true
+          name: Français
+        - locale: en
+          name: English
 
 nav:
   - index.md
