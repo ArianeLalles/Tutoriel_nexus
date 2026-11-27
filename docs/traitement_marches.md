@@ -32,7 +32,7 @@ Clic droit + faire glisser la souris vers la droite pour zoomer sur le graphique
 <img src="images/gaps_full_screen.png" width="800">
 </figure>
 
-S’il y a un pic absurde, sélectionner la zone à effacer en déplaçant la barre bleue et les curseurs orange. Clic droit sur le marqueur et **delete range in trajetory**. 
+S’il y a un pic absurde, sélectionner la zone à effacer en déplaçant la barre bleue et les curseurs orange. Clic droit sur le marqueur et **delete range in trajectory**. 
 <figure>
 <img src="images/delete_range.png" width="450">
 </figure>
