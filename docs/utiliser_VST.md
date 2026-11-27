@@ -7,7 +7,7 @@
 Dans **Ressources**, **create a new subject from a labelling skeleton**. Choisir le template à utiliser.
 
 <figure>
-<img src="/images/use_vst.png" width="250">
+<img src="images/use_vst.png" width="250">
 </figure>
 
 ## 2. Appliquer le modèle au nouveau sujet
@@ -24,7 +24,7 @@ Ajouter **Update skeleton parameters** pour que le modèle prenne en compte le n
 
 
 <figure>
-<img src="/images/auto_initialize_labeling.png" width="400">
+<img src="images/auto_initialize_labeling.png" width="400">
 </figure>
 
 Une fois la statique enregistrée, passer aux enregistrements dynamiques et se référer au point [Traitement des enregistrements dynamiques](traitement_marches.md)
