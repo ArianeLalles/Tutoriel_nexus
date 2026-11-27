@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>Noneindex.html</loc>
+        <lastmod>2026-11-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneindex.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/index.html"/>
+    </url>
+    <url>
+        <loc>Nonenouveau_VST.html</loc>
+        <lastmod>2026-11-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonenouveau_VST.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/nouveau_VST.html"/>
+    </url>
+    <url>
+        <loc>Noneraccourcis_clavier.html</loc>
+        <lastmod>2026-11-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneraccourcis_clavier.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/raccourcis_clavier.html"/>
+    </url>
+    <url>
+        <loc>Nonetraitement_marches.html</loc>
+        <lastmod>2026-11-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonetraitement_marches.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/traitement_marches.html"/>
+    </url>
+    <url>
+        <loc>Noneutiliser_VST.html</loc>
+        <lastmod>2026-11-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneutiliser_VST.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/utiliser_VST.html"/>
+    </url>
+    <url>
+        <loc>Noneen/index.html</loc>
+        <lastmod>2026-11-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/index.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneindex.html"/>
+    </url>
+    <url>
+        <loc>Noneen/nouveau_VST.html</loc>
+        <lastmod>2026-11-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/nouveau_VST.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonenouveau_VST.html"/>
+    </url>
+    <url>
+        <loc>Noneen/raccourcis_clavier.html</loc>
+        <lastmod>2026-11-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/raccourcis_clavier.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneraccourcis_clavier.html"/>
+    </url>
+    <url>
+        <loc>Noneen/traitement_marches.html</loc>
+        <lastmod>2026-11-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/traitement_marches.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonetraitement_marches.html"/>
+    </url>
+    <url>
+        <loc>Noneen/utiliser_VST.html</loc>
+        <lastmod>2026-11-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/utiliser_VST.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneutiliser_VST.html"/>
+    </url>
+</urlset>

@@ -1,0 +1,716 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="index.html">
+      
+      
+        <link rel="next" href="traitement_marches.html">
+      
+      
+        
+          <link rel="alternate" href="nouveau_VST.html" hreflang="fr">
+        
+          <link rel="alternate" href="en/nouveau_VST.html" hreflang="en">
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
+    
+    
+      
+        <title>Création d'un VST - Tutoriel Nexus</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#creation-dun-vst" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="index.html" title="Tutoriel Nexus" class="md-header__button md-logo" aria-label="Tutoriel Nexus" data-md-component="logo">
+      
+  <img src="ibhgc.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Tutoriel Nexus
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Création d'un VST
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Sélectionner la langue">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="nouveau_VST.html" hreflang="fr" class="md-select__link">
+              Français
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="en/nouveau_VST.html" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Tutoriel Nexus" class="md-nav__button md-logo" aria-label="Tutoriel Nexus" data-md-component="logo">
+      
+  <img src="ibhgc.png" alt="logo">
+
+    </a>
+    Tutoriel Nexus
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Création d'un VST
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="nouveau_VST.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Création d'un VST
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-creation-du-sujet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Création du sujet
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-creation-des-segments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Création des segments
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-renommer-les-marqueurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Renommer les marqueurs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-relier-les-segments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Relier les segments
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-finalisation-du-vst" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Finalisation du VST
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="traitement_marches.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Traitement des acquisitions dynamiques
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="utiliser_VST.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Utiliser un VST existant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="raccourcis_clavier.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Raccourcis clavier
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-creation-du-sujet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Création du sujet
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-creation-des-segments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Création des segments
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-renommer-les-marqueurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Renommer les marqueurs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-relier-les-segments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Relier les segments
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-finalisation-du-vst" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Finalisation du VST
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="creation-dun-vst">Création d'un VST</h1>
+<p><a href="https://www.youtube.com/watch?v=Z91QfRdT5EI">Voir la vidéo YouTube</a></p>
+<h2 id="1-creation-du-sujet">1. Création du sujet</h2>
+<p>Ouvrir l’acquisition Static</p>
+<p>Dans le panneau <strong>Resources</strong>, onglet <strong>Subjects</strong>, sélectionner <strong>Create a blank subject</strong>. Entrer le nom du futur Template (<em>Pour les projets validés CPP, entrer le nom de l'étude</em>).</p>
+<p><img src="images/Etape_1_creation_VST.png" width="800"></p>
+<p><span style="color:red"><strong>Attention, toujours travailler sur la même frame !!!</strong></span></p>
+<h2 id="2-creation-des-segments">2. Création des segments</h2>
+<p>Dans le panneau <strong>Tools</strong>, onglet <strong>Subject Preparation</strong> 
+<img src="images/subject_preparation.png" width="300"></p>
+<p>Dans <strong>Labeling Template Builder</strong> créer les segments (pelvis, femurD, tibiaD, piedD, femurG, tibiaG, piedG).</p>
+<p>Commencer par le pelvis</p>
+<p><em>Il est plus simple de se placer face au sujet</em></p>
+<ol>
+<li>
+<p>Indiquer le nom et cliquer sur create
+    <figure>
+    <img src="images/labeling_template_builder.png" width="450">
+    </figure></p>
+</li>
+<li>
+<p>Sélectionner le marqueur origine du segment</p>
+</li>
+<li>
+<p>Sélectionner les autres marqueurs pour former :</p>
+<ul>
+<li>L’axe principal (<em>plus longue distance depuis l’origine</em>)</li>
+<li>L’axe secondaire (<em>direction différente que marqueur précédent</em>)</li>
+<li>Le marqueur additionnel (<em>autre direction</em>)</li>
+</ul>
+</li>
+<li>
+<p>Recliquer sur create et le segment est terminé (<em>Le cube correspond à l'origine du segment</em>)
+    <figure>
+    <img src="images/segment_termine.png" width="250">
+    </figure></p>
+</li>
+<li>
+<p>Dans l’onglet <strong>Subjects</strong>, étendre le menu déroulant, les marqueurs et le segment créé apparaissent. 
+    <figure>
+    <img src="images/pelvis_termine.png" width="250">
+    </figure></p>
+</li>
+</ol>
+<p>Faire de même pour les autres segments. Il est préférable d’avoir un marqueur commun à chaque segment. </p>
+<h2 id="3-renommer-les-marqueurs">3. Renommer les marqueurs</h2>
+<p>Une fois le modèle terminé, nommer les marqueurs selon le marqueur set défini. <em>Noms à adapter si le markerset est différent.</em></p>
+<figure>
+<img src="images/marker_set.png" width="800">
+</figure>
+
+<p>Pour différencier le côté droit et gauche, changer la couleur des marqueurs (CTRL + clic gauche pour sélectionner les marqueurs). Cliquer sur <strong>Color</strong> et modifier la couleur. Changer le radius des marqueurs médiaux (RMFE, LMFE, RMM, LMM, RFMH1, LFMH1).</p>
+<figure>
+<img src="images/change_color_marker.png" width="800">
+</figure>
+
+<p>Si certains marqueurs ne sont présents que pendant la statique les indiquer comme « optional » ou « calibration only »</p>
+<figure>
+<img src="images/optional_markers.png" width="250">
+</figure>
+
+<h2 id="4-relier-les-segments">4. Relier les segments</h2>
+<p>Dans <strong>Link segments</strong>, définir le type d’articulation (<em>e.g.,</em> ball joint) et cliquer sur <strong>Link</strong> pour relier les segments (<strong>du proximal vers le distal</strong>). </p>
+<ol>
+<li>
+<p>Choisir le segment parent (pelvis)
+    <figure>
+    <img src="images/segment_parent.png" width="250">
+    </figure></p>
+</li>
+<li>
+<p>Choisir le segment enfant. Pelvis → femurD → tibiaD → piedD. <em>Faire la même chose pour le côté gauche</em>
+    <figure>
+    <img src="images/segment_enfant.png" width="250">
+    </figure></p>
+</li>
+<li>
+<p>Une fois l’opération terminée, les articulations apparaissent
+    <figure>
+    <img src="images/linked_segments.png" width="250">
+    </figure></p>
+</li>
+</ol>
+<p>Le modèle est fini, à cette étape le nom du modèle doit apparaitre en <strong>noir</strong>. S’il est <span style="color:red"><strong>rouge</strong></span>, une étape est manquante ou erreur est apparue. Il est préférable de recommencer de zéro.</p>
+<h2 id="5-finalisation-du-vst">5. Finalisation du VST</h2>
+<p>Onglet <strong>Tools</strong> &gt; <strong>pipeline</strong> &gt; <strong>Current pipeline</strong>, sélectionner <strong>Calibrate Labeling skeleton static</strong> </p>
+<figure>
+<img src="images/calibrate_pipeline.png" width="400">
+</figure>
+
+<p>Dans le menu déroulant <strong>available operation</strong> &gt; <strong>subject calibration</strong>, double cliquer sur <strong>Set autolabel pose</strong> et update <strong>skeleton parameters</strong>. Tout apparait dans le Current pipeline, et cliquer sur play.</p>
+<figure>
+<img src="images/updated_calibrate_pipeline.png" width="400">
+</figure>
+
+<p><em>Si une calibration fonctionnelle est réalisée, faire la même chose en sélectionnant <strong>create labelling skeleton ROM</strong> à la place, et ajouter set autolabel pose et update skeleton parameters.</em></p>
+<p>Sauvegarder le sujet comme template : clic droit sur le sujet et <strong>Save labelling skeleton as template</strong>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": [], "search": "assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+    
+  </body>
+</html>
