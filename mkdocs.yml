@@ -13,6 +13,7 @@ plugins:
   - to-pdf
 
 nav:
+  - Télécharger le pdf : Tutoriel_nexus.pdf
   - index.md
   - nouveau_VST.md
   - traitement_marches.md
